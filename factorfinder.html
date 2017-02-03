@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factor Finder | By TL</title>
+    <style>
+        div.body {
+            width: 800px;
+            margin: 0 auto;
+        }
+        div.input {
+            width: 100%;
+            height: 100px;
+        }
+        .invisible {
+            display: none;
+        }
+        .indent {
+            text-indent: 75px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="body">
+        
+        
+        <div class="input">
+            <h3>Type in any number to get a list of factors</h3>
+            <input id="input" type="text">
+            <button onclick="findFactors()">Get All Factors</button>
+            <button onclick="evenFactors()">Get Even Factors</button>
+            <button onclick="oddFactors()">Get Odd Factors</button>
+            <button onclick="one10Factors()">Get Factors 1-10</button>
+        </div>
+        
+        
+        <div class="factors">
+            <p id="1"></p>
+            <p id="2"></p>
+            <p id="3"></p>
+            <p id="4"></p>
+            <p id="5"></p>
+            <p id="6"></p>
+            <p id="7"></p>
+            <p id="8"></p>
+            <p id="9"></p>
+            <p id="10"></p>
+            <button onclick="clearFactors()">Clear Factors</button>
+        </div>
+        
+        
+        <div id="updates" class="invisible">
+            <h1>Update Log:</h1>
+            <p>v1.1 - 2/3/2017 - 4:47 PM :</p>    
+                <p class="indent">- When you click the "Clear Factors" button, your number in the input box clears</p>
+                <p class="indent">- Added a new "secret" code *Hint hint they can be found in the source ;D*</p>
+                <p class="indent">- Minified some JS code areas</p>
+                <p class="indent">- Added a new "Clear Extras" button to remove text added from imputting codes</p>
+                <p class="indent">- Factors 11-20 coming soon</p>
+                <p class="indent">- And of course: Text and bug fixes</p>
+            <p>v1.0 - 2/2/2017 - 5:38 PM : Initial Release</p>
+        </div>
+        
+        
+        <button onclick="useCode()">Use Code</button>
+        <p id="who"></p>
+        <button id="clearextras" class="invisible">Clear Extras</button>
+    </div>
+    <script src="factorfinder.js"></script>
+</body>
+</html>
